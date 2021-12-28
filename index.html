@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h2>JavaScript HTML DOM</h2>
+    <form action="#" id="form">
+      FirstName: <input type="text" value="zero" /> LastName:
+      <input type="text" value="Singh" />
+      <input type="submit" value="submit" />
+      <p>These are the values of each element in the form:</p>
+
+      <p id="demo"></p>
+
+      <script>
+        const x = document.getElementById("form");
+        let text = "";
+        for (let i = 0; i < x.length; i++) {
+          text += x.elements[i].value + "<br /> ";
+        }
+        document.getElementById("demo").innerHTML = "Date: " + Date();
+      </script>
+    </form>
+  </body>
+</html>
