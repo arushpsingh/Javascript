@@ -8,8 +8,10 @@ const myData = {
   },
 };
 
-let { name, age, deg, hobbies } = myData;
+console.log(myData.name, { ...myData });
 
-console.log(
-  `My name is ${name}. My ag eis ${age}. My degree is ${deg}. My hobby is ${hobbies.second}`
-);
+// let { name, age, deg, hobbies } = myData;
+
+// console.log(
+//   `My name is ${name}. My ageis ${age}. My degree is ${deg}. My hobby is ${hobbies.second}`
+// );

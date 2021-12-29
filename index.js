@@ -23,7 +23,9 @@ function sumOne(a, b) {
 
 const myArray = [4, 5];
 // console.log(sumOne(...myArray)); //Rest
-
+const arr = [1, 2, 3, 4, 5];
+// console.log(arr);
+// console.log(...arr);
 // console.log(sumOne(4, 47))
 
 function sumMultples(...args) {
