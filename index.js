@@ -21,9 +21,13 @@ function sumOne(a, b) {
   return a + b;
 }
 
+const myArray = [4, 5];
+console.log(sumOne(...myArray)); //Rest
+
 // console.log(sumOne(4, 47))
 
 function sumMultples(...args) {
+  //Spread
   let sum = 0;
   for (const arg of args) {
     sum += arg;
@@ -31,4 +35,4 @@ function sumMultples(...args) {
   return sum;
 }
 
-console.log(sumMultples(1, 2, 3));
+// console.log(sumMultples(1, 2, 3));
