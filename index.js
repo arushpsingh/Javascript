@@ -22,7 +22,7 @@ function sumOne(a, b) {
 }
 
 const myArray = [4, 5];
-console.log(sumOne(...myArray)); //Rest
+// console.log(sumOne(...myArray)); //Rest
 
 // console.log(sumOne(4, 47))
 
@@ -36,3 +36,33 @@ function sumMultples(...args) {
 }
 
 // console.log(sumMultples(1, 2, 3));
+
+// ------Promise---------
+const uno = () => {
+  return "I am one";
+};
+
+const dos = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("I am two");
+    }, 3000);
+  });
+};
+
+const tres = () => {
+  return "I am three";
+};
+
+const callMe = async () => {
+  let varOne = uno();
+  console.log(varOne);
+
+  let varTwo = await dos();
+  console.log(varTwo);
+
+  let varThree = tres();
+  console.log(varThree);
+};
+
+callMe();
