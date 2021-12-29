@@ -13,4 +13,22 @@ const items = filtered.map((e) => {
   return obj;
 });
 
-console.log(re);
+// console.log(re);
+
+// ------------------Rest and Spread--------------
+
+function sumOne(a, b) {
+  return a + b;
+}
+
+// console.log(sumOne(4, 47))
+
+function sumMultples(...args) {
+  let sum = 0;
+  for (const arg of args) {
+    sum += arg;
+  }
+  return sum;
+}
+
+console.log(sumMultples(1, 2, 3));
